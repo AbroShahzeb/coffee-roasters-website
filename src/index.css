@@ -125,19 +125,130 @@
     font-style: italic;
   }
 
+  /* Fraunces Fonts */
   @font-face {
     font-family: "Fraunces";
-    src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
-      format("truetype");
-    font-weight: 100 900; /* Supports all weights in the variable range */
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Black.woff2") format("woff2");
+    font-weight: 900;
     font-style: normal;
   }
 
   @font-face {
     font-family: "Fraunces";
-    src: url("./assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf")
-      format("truetype");
-    font-weight: 100 900; /* Supports all weights in the variable range */
+    src: url("./assets/fonts/fraunces/Fraunces9pt-BlackItalic.woff2")
+      format("woff2");
+    font-weight: 900;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-BoldItalic.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-LightItalic.woff2")
+      format("woff2");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Regular.woff2")
+      format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-SemiBold.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-SemiBoldItalic.woff2")
+      format("woff2");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces9pt-ThinItalic.woff2")
+      format("woff2");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  /* Soft variations */
+  @font-face {
+    font-family: "Fraunces Soft";
+    src: url("./assets/fonts/fraunces/Fraunces9ptSoft-Black.woff2")
+      format("woff2");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces Soft";
+    src: url("./assets/fonts/fraunces/Fraunces9ptSoft-BlackItalic.woff2")
+      format("woff2");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces Soft";
+    src: url("./assets/fonts/fraunces/Fraunces9ptSoft-Bold.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces Soft";
+    src: url("./assets/fonts/fraunces/Fraunces9ptSoft-BoldItalic.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /* Add more fonts following this pattern */
 }
