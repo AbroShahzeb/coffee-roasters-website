@@ -53,7 +53,7 @@ export const CollectionSection = () => {
             <div className=" flex items-center justify-center">
               <img
                 src={item.image}
-                className="w-[200px] h-[151px] md:w-[255px] md:h-[193px]  xl:h-[193px] xl:w-auto"
+                className="w-[200px] h-[151px] md:w-[255px] md:h-[193px]  xl:h-[183px] xl:w-auto"
               />
             </div>
             <div className="mt-6 md:mt-0 lg:mt-[72px]">
