@@ -22,7 +22,10 @@ export default {
       "heading-3": ["32px", { lineHeight: "36px" }],
       heading: ["24px", { lineHeight: "32px" }],
       body: ["16px", { lineHeight: "26px" }],
-      "navigation-menu": ["12px", { lineHeight: "15px" }],
+      "navigation-menu": [
+        "12px",
+        { lineHeight: "15px", letterSpacing: "0.92px" },
+      ],
     },
   },
   plugins: [],
