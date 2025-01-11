@@ -41,7 +41,7 @@ export const CollectionSection = () => {
         <h2 className="text-grey text-[40px] md:text-[96px] lg:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
           our collection
         </h2>
-        <div className="absolute inset-0 top-1/2 lg:-translate-y-1/2 z-10 bg-collection-heading-gradient lg:h-[196px]"></div>
+        <div className="absolute inset-0 top-1/2 lg:-translate-y-1/2 z-10 bg-collection-heading-gradient lg:h-[196px] xl:-mt-6"></div>
       </div>
 
       <div className="mt-[13px] flex flex-col items-center w-full gap-12 md:gap-8 lg:gap-[30px] md:-mt-5 xl:mt-0 md:relative md:z-30 xl:flex-row xl:max-w-[1110px] xl:mx-auto">
@@ -53,7 +53,7 @@ export const CollectionSection = () => {
             <div className=" flex items-center justify-center">
               <img
                 src={item.image}
-                className="w-[200px] h-[151px] md:w-[255px] md:h-[193px]  xl:h-[183px] xl:w-auto"
+                className="w-[200px] h-[151px] md:w-[255px] md:h-[193px]  xl:h-[183px] xl:w-auto xl:ml-2"
               />
             </div>
             <div className="mt-6 md:mt-0 lg:mt-[72px]">
