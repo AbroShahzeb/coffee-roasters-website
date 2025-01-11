@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-ExtraBoldItalic.ttf")
+      format("truetype");
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-ExtraLightItalic.ttf")
+      format("truetype");
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-SemiBoldItalic.ttf")
+      format("truetype");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("./assets/fonts/barlow/Barlow-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+      format("truetype");
+    font-weight: 100 900; /* Supports all weights in the variable range */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf")
+      format("truetype");
+    font-weight: 100 900; /* Supports all weights in the variable range */
+    font-style: italic;
+  }
+}
