@@ -14,7 +14,7 @@ export const Hero = () => {
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
-          <Link className="mt-10 lg:w-[217px]" to="/create-your-plan">
+          <Link className="mt-10 lg:w-[217px] lg:mt-14" to="/create-your-plan">
             <Button label="Create your plan" className="w-full" />
           </Link>
         </div>
