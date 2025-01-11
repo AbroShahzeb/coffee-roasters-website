@@ -36,7 +36,7 @@ const collection = [
 
 export const CollectionSection = () => {
   return (
-    <section className="mt-[120px] xl:mt-[222px] px-6 md:px-10 lg:px-0">
+    <section className="mt-[120px] xl:mt-[172px] px-6 md:px-10 lg:px-0">
       <div className="relative xl:max-w-[1110px] xl:mx-auto">
         <h2 className="text-grey text-[40px] md:text-[96px] lg:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
           our collection
