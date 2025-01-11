@@ -6,7 +6,7 @@ export const Button = ({
 }) => {
   const variants = {
     primary:
-      "py-4 px-[75.5px] rounded-md bg-dark-cyan text-lg leading-[25px] font-fraunces font-black text-surface flex items-center justify-center hover:bg-[#66D2CF] transition-all disabled:bg-[#E2DEDB]",
+      "py-4 px-8 rounded-md bg-dark-cyan text-lg leading-[25px] font-fraunces font-black text-surface flex items-center justify-center hover:bg-[#66D2CF] transition-all disabled:bg-[#E2DEDB]",
   };
   return (
     <button className={`${variants[variant]} ${className}`} disabled={disabled}>

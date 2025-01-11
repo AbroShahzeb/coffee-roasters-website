@@ -9,13 +9,13 @@ export const Hero = () => {
           <h1 className="text-[40px] leading-[40px] md:text-[48px] md:leading-[48px] lg:text-[72px] lg:leading-[72px] text-surface font-fraunces font-black">
             Great coffee made simple.
           </h1>
-          <p className="text-body text-surface/80 mt-6 lg:mt-8">
+          <p className="text-body text-surface/80 mt-6 lg:mt-8 lg:max-w-[440px]">
             Start your mornings with the world’s best coffees. Try our expertly
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
-          <Link className="mt-10" to="/create-your-plan">
-            <Button label="Create your plan" className="lg:w-[217px]" />
+          <Link className="mt-10 lg:w-[217px]" to="/create-your-plan">
+            <Button label="Create your plan" className="w-full" />
           </Link>
         </div>
       </header>
