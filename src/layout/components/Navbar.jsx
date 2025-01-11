@@ -9,7 +9,7 @@ export const Navbar = () => {
         <img src={logo} alt="Coffee Roasters Logo" />
       </Link>
 
-      <ul className="text-navigation-menu uppercase font-bold text-grey items-center gap-[33px] hidden md:flex">
+      <ul className="text-navigation-menu uppercase font-bold text-grey items-center gap-8 hidden md:flex">
         <NavLink>Home</NavLink>
         <NavLink>About Us</NavLink>
         <NavLink>Create your plan</NavLink>

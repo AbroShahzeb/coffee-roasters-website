@@ -27,6 +27,11 @@ export default {
         { lineHeight: "15px", letterSpacing: "0.92px" },
       ],
     },
+    backgroundImage: {
+      "hero-mobile": 'url("./assets/home/mobile/image-hero-coffeepress.jpg")',
+      "hero-tablet": 'url("./assets/home/tablet/image-hero-coffeepress.jpg")',
+      "hero-desktop": 'url("./assets/home/desktop/image-hero-coffeepress.jpg")',
+    },
   },
   plugins: [],
 };
