@@ -20,7 +20,7 @@ export default {
       "heading-1": ["72px", { lineHeight: "72px" }],
       "heading-2": ["40px", { lineHeight: "48px" }],
       "heading-3": ["32px", { lineHeight: "36px" }],
-      heading: ["24px", { lineHeight: "32px" }],
+      "heading-4": ["24px", { lineHeight: "32px" }],
       body: ["16px", { lineHeight: "26px" }],
       "navigation-menu": [
         "12px",
@@ -31,6 +31,8 @@ export default {
       "hero-mobile": 'url("./assets/home/mobile/image-hero-coffeepress.jpg")',
       "hero-tablet": 'url("./assets/home/tablet/image-hero-coffeepress.jpg")',
       "hero-desktop": 'url("./assets/home/desktop/image-hero-coffeepress.jpg")',
+      "collection-heading-gradient":
+        "linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%)",
     },
   },
   plugins: [],
