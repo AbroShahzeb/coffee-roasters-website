@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { StepCircle } from "../../../assets/svgAssetComponents/StepCircle";
 import { Button } from "../../../generalComponents/Button";
 
@@ -76,9 +77,12 @@ export const HowItWorksSection = () => {
         </div>
       </div>
 
-      <div className="mt-20 md:mt-[44px] xl:mt-[64px] w-full flex justify-center md:justify-start">
+      <Link
+        to="/create-your-plan"
+        className="mt-20 md:mt-[44px] xl:mt-[64px] w-full flex justify-center md:justify-start"
+      >
         <Button label="Create your plan" />
-      </div>
+      </Link>
     </section>
   );
 };
