@@ -7,12 +7,12 @@ import { IconInstagram } from "../../assets/svgAssetComponents/IconInstagram";
 export const Footer = () => {
   return (
     <footer className="px-6 pb-[72px] pt-[120px] md:px-10 lg:px-20 lg:pb-[88px] lg:pt-[200px] md:pt-[144px]">
-      <div className="flex flex-col gap-12 px-6 py-14 md:py-[54px] lg:px-[85px] lg:py-12 lg:flex-row lg:justify-between md:gap-8 items-center bg-[#2C343E] lg:h-[120px]">
-        <Link to="/">
+      <div className="flex flex-col gap-12 px-6 py-14 md:py-[54px] lg:px-[85px] lg:py-12 lg:flex-row lg:justify-between md:gap-8 xl:justify-start items-center bg-[#2C343E] lg:h-[120px] xl:gap-0">
+        <Link to="/" className="xl:mr-[100px] ">
           <img src={logo} alt="Coffee Roasters Logo" />
         </Link>
 
-        <ul className="flex flex-col items-center gap-6 md:flex-row md:gap-[33px] lg:text-center">
+        <ul className="flex flex-col items-center gap-6 md:flex-row md:gap-[33px] lg:text-center xl:mr-auto xl:text-left">
           <li>
             <Link
               to="/"
