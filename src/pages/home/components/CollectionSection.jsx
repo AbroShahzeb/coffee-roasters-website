@@ -2,6 +2,7 @@ import imageGranEspresso from "../../../assets/home/desktop/image-gran-espresso.
 import imagePlanatlo from "../../../assets/home/desktop/image-planalto.png";
 import imagePiccollo from "../../../assets/home/desktop/image-piccollo.png";
 import imageDanche from "../../../assets/home/desktop/image-danche.png";
+import { CollectionItem } from "./CollectionItem";
 
 const collection = [
   {
@@ -36,7 +37,7 @@ const collection = [
 
 export const CollectionSection = () => {
   return (
-    <section className="mt-[120px] xl:mt-[202px] px-6 md:px-10 lg:px-0">
+    <section className="mt-[120px] xl:mt-[202px] px-6 pb-[120px] md:pb-[144px] lg:pb-[200px] md:px-10 lg:px-0">
       <div className="relative xl:max-w-[1110px] xl:mx-auto">
         <h2 className="text-grey text-[40px] md:text-[96px] lg:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
           our collection
@@ -46,25 +47,7 @@ export const CollectionSection = () => {
 
       <div className="mt-[13px] flex flex-col items-center w-full gap-12 md:gap-8 lg:gap-[30px] md:-mt-5 xl:mt-0 md:relative md:z-30 xl:flex-row xl:max-w-[1110px] xl:mx-auto">
         {collection.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col items-center text-center text-dark-grey-blue md:flex-row md:justify-center md:gap-[36px] xl:gap-0  md:text-left xl:flex-col lg:text-center w-full"
-          >
-            <div className=" flex items-center justify-center">
-              <img
-                src={item.image}
-                className="w-[200px] h-[151px] md:w-[255px] md:h-[193px]  xl:h-[183px] xl:w-auto xl:ml-2"
-              />
-            </div>
-            <div className="mt-6 md:mt-0 lg:mt-[72px]">
-              <h3 className="text-heading-4 font-fraunces font-black ">
-                {item.title}
-              </h3>
-              <p className="mt-4 md:mt-6 text-body max-w-[282px]">
-                {item.description}
-              </p>
-            </div>
-          </div>
+          <CollectionItem item={item} />
         ))}
       </div>
     </section>
