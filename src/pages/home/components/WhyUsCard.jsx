@@ -1,6 +1,28 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export const WhyUsCard = ({ card }) => {
+  const { ref, inView } = useInView({ threshold: 0.3 });
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      y: -40,
+    },
+    shown: {
+      opacity: 1,
+      y: 0,
+    },
+  };
   return (
-    <div className="bg-dark-cyan px-3 pb-12 md:py-[41px] md:pr-[48px] md:pl-[70px] flex flex-col md:flex-row items-center  text-surface justify-end md:justify-start rounded-lg h-[382px] md:h-auto w-full max-w-[500px] md:max-w-[573px] gap-[55px] xl:flex-col xl:px-12 xl:gap-[56px] xl:max-w-full xl:pt-[72px] xl:h-[388px]">
+    <motion.div
+      initial="hidden"
+      variants={variants}
+      ref={ref}
+      animate={inView ? "shown" : "hidden"}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="bg-dark-cyan px-3 pb-12 md:py-[41px] md:pr-[48px] md:pl-[70px] flex flex-col md:flex-row items-center  text-surface justify-end md:justify-start rounded-lg h-[382px] md:h-auto w-full max-w-[500px] md:max-w-[573px] gap-[55px] xl:flex-col xl:px-12 xl:gap-[56px] xl:max-w-full xl:pt-[72px] xl:h-[388px]"
+    >
       <div className=" flex-shrink-0 flex items-center justify-center xl:h-[72px]">
         <img
           src={card.icon}
@@ -17,6 +39,6 @@ export const WhyUsCard = ({ card }) => {
           {card.description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
