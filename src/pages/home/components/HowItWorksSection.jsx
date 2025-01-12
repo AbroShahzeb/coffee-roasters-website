@@ -32,9 +32,9 @@ export const HowItWorksSection = () => {
       </div>
 
       <div className="md:grid grid-rows-[auto,1fr] grid-cols-3 gap-y-[62px] md:gap-y-[67px]">
-        <div className="hidden md:grid row-start-1 row-end-2 col-start-1 col-end-4 grid-rows-1 grid-cols-3">
+        <div className="hidden md:grid row-start-1 row-end-2 col-start-1 col-end-4 grid-rows-1 grid-cols-3 xl:gap-x-[95px]">
           <div className="col-span-2 col-start-1 row-start-1 md:translate-x-[15px] flex items-center">
-            <div className="w-full h-[2px] bg-pale-orange col-span-2 col-start-1 row-start-1 md:translate-x-[15px] flex items-end relative z-10"></div>
+            <div className="w-full h-[2px] bg-pale-orange col-span-2 col-start-1 row-start-1 md:translate-x-[15px] flex items-end relative z-10 xl:w-[760px]"></div>
           </div>
 
           <div className="col-start-1 row-start-1 row-end-2 relative z-20">
@@ -64,7 +64,7 @@ export const HowItWorksSection = () => {
                 {step.id + 1}
               </div>
               <div className="flex flex-col gap-6 md:gap-[38px]">
-                <h2 className="text-dark-grey-blue text-[28px] leading-[32px] font-fraunces font-black md:max-w-[225px]">
+                <h2 className="text-dark-grey-blue text-[28px] leading-[32px] xl:text-[32px] xl:leading-[36px] font-fraunces font-black md:max-w-[225px]">
                   {step.title}
                 </h2>
                 <p className="text-body text-dark-grey-blue">
