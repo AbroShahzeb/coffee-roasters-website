@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const Hero = () => {
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
   const variants = {
     hidden: { opacity: 0, x: -100 },
