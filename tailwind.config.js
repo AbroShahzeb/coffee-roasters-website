@@ -36,6 +36,20 @@ export default {
       "why-us": "linear-gradient(to bottom, #ff0 50%, transparent 50%)",
       "bg-steps": 'url("./assets/plan/desktop/bg-steps.png")',
       none: "none",
+      "about-mobile": 'url("./assets/about/mobile/image-hero-whitecup.jpg")',
+      "about-tablet": 'url("./assets/about/tablet/image-hero-whitecup.jpg")',
+      "about-desktop": 'url("./assets/about/desktop/image-hero-whitecup.jpg")',
+      "about-commitment-mobile":
+        'url("./assets/about/mobile/image-commitment.jpg")',
+      "about-commitment-tablet":
+        'url("./assets/about/tablet/image-commitment.jpg")',
+      "about-commitment-desktop":
+        'url("./assets/about/desktop/image-commitment.jpg")',
+      "quality-mobile": 'url("./assets/about/mobile/bg-quality.png")',
+      "quality-mobile-cover": 'url("./assets/about/mobile/image-quality.jpg")',
+      "quality-tablet": 'url("./assets/about/tablet/bg-quality.png")',
+      "quality-tablet-cover": 'url("./assets/about/tablet/image-quality.jpg")',
+      "quality-desktop": 'url("./assets/about/desktop/bg-quality.png")',
     },
   },
   plugins: [],
