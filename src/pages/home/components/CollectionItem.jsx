@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const CollectionItem = ({ item }) => {
-  const { ref, inView } = useInView({ threshold: 0.4 });
+  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
 
   const imageVariants = {
     hidden: { opacity: 0, y: 0, rotate: 0 }, // Start off-screen and slightly down

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { StepCircle } from "../../../assets/svgAssetComponents/StepCircle";
 import { Button } from "../../../generalComponents/Button";
+import { Step } from "./Step";
 
 const workProcessSteps = [
   {
@@ -52,27 +53,7 @@ export const HowItWorksSection = () => {
         </div>
         <div className="grid grid-cols-1 grid-rows-3 gap-[56px] md:gap-[10px] xl:gap-[95px] md:row-start-2 md:row-end-3 md:col-start-1 md:col-end-4 md:grid-cols-3 md:grid-rows-1">
           {workProcessSteps.map((step, index) => (
-            <div
-              key={step.id}
-              className={`col-start-${1} col-end-${2} row-start-${
-                index + 1
-              } row-end-${
-                index + 2
-              } md:col-start-auto md:col-end-auto md:row-start-auto md:row-end-auto flex flex-col gap-6 md:gap-[42px] items-center text-center md:items-start md:text-left`}
-            >
-              <div className="text-[72px] leading-[72px] text-pale-orange font-fraunces font-black">
-                {"0"}
-                {step.id + 1}
-              </div>
-              <div className="flex flex-col gap-6 md:gap-[38px]">
-                <h2 className="text-dark-grey-blue text-[28px] leading-[32px] xl:text-[32px] xl:leading-[36px] font-fraunces font-black md:max-w-[225px]">
-                  {step.title}
-                </h2>
-                <p className="text-body text-dark-grey-blue xl:max-w-[285px]">
-                  {step.description}
-                </p>
-              </div>
-            </div>
+            <Step step={step} index={index} key={step.id} />
           ))}
         </div>
       </div>
