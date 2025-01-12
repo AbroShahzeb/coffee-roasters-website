@@ -2,16 +2,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const WhyUsCard = ({ card }) => {
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.5 });
 
   const variants = {
     hidden: {
+      scale: 1.5,
       opacity: 0,
       y: -40,
     },
     shown: {
       opacity: 1,
       y: 0,
+      scale: 1,
     },
   };
   return (
