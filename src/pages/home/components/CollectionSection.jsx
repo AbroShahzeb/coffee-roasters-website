@@ -42,10 +42,10 @@ export const CollectionSection = () => {
         <h2 className="text-grey text-[40px] md:text-[96px] xl:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
           our collection
         </h2>
-        <div className="absolute inset-0  z-10 bg-collection-heading-gradient top-3 xl:-mt-[256px] max-h-[200px]"></div>
+        <div className="absolute inset-0  z-10 bg-collection-heading-gradient lg:bg-collection-heading-gradient-large top-3 lg:-mt-[50px] max-h-[200px]"></div>
       </div>
 
-      <div className="mt-[13px] flex flex-col items-center w-full gap-12 md:gap-8 lg:gap-[30px] md:-mt-5 xl:mt-0 md:relative md:z-30 xl:flex-row xl:max-w-[1110px] xl:mx-auto">
+      <div className="mt-[13px] flex flex-col items-center w-full gap-12 md:gap-8 lg:gap-[30px] md:-mt-5 xl:mt-[-70px] md:relative md:z-30 xl:flex-row xl:max-w-[1110px] xl:mx-auto">
         {collection.map((item) => (
           <CollectionItem item={item} />
         ))}

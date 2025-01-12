@@ -55,7 +55,7 @@ export const CollectionItem = ({ item }) => {
           times: [0, 0.3, 1],
           delay: 0.5,
         }}
-        className="mt-6 md:mt-0 lg:mt-0"
+        className="mt-6 md:mt-0 lg:mt-[72px]"
       >
         <h3 className="text-heading-4 font-fraunces font-black ">
           {item.title}
