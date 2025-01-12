@@ -45,8 +45,8 @@ export const WhyUsSection = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-0 right-0 h-1/2 xl:h-[calc(50%+36px)] w-full rounded-b-[10px] z-10 bg-bg-steps "></div>
-        <div className=" flex flex-col items-center gap-8 relative  z-20 px-6 md:px-0 xl:flex-row xl:px-[85px] xl:gap-[30px] xl:items-stretch">
+        <div className="absolute top-0 left-0 right-0 h-1/2 xl:h-[calc(50%+36px)] w-full rounded-b-[10px] z-10 bg-bg-steps bg-contain"></div>
+        <div className=" flex flex-col items-center gap-8 relative  z-20 px-6 md:px-0 xl:flex-row xl:px-[85px] xl:gap-[30px] xl:items-stretch xl:h-[388px]">
           {whyUsCards.map((card) => (
             <WhyUsCard card={card} />
           ))}
