@@ -6,14 +6,12 @@ export const WhyUsCard = ({ card }) => {
 
   const variants = {
     hidden: {
-      scale: 1.5,
       opacity: 0,
       y: -40,
     },
     shown: {
       opacity: 1,
       y: 0,
-      scale: 1,
     },
   };
   return (
