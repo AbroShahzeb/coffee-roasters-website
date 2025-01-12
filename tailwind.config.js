@@ -33,6 +33,9 @@ export default {
       "hero-desktop": 'url("./assets/home/desktop/image-hero-coffeepress.jpg")',
       "collection-heading-gradient":
         "linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%)",
+      "why-us": "linear-gradient(to bottom, #ff0 50%, transparent 50%)",
+      "bg-steps": 'url("./assets/plan/desktop/bg-steps.png")',
+      none: "none",
     },
   },
   plugins: [],
