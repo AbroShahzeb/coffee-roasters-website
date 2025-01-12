@@ -1,17 +1,13 @@
-import imageQualityMobile from "../../../assets/about/mobile/image-quality.jpg";
-import imageQualityTablet from "../../../assets/about/tablet/image-quality.jpg";
-import imageQualityDesktop from "../../../assets/about/desktop/image-quality.jpg";
-
 export const SectionQuality = () => {
   return (
-    <section className="mx-6 mb:[120px] md:mb-[144px] lg:mb-[168px] md:mx-10 lg:px-20 xl:max-w-[1110px] xl:mx-auto xl:px-0 bg-quality-mobile md:bg-quality-tablet lg:bg-quality-desktop bg-cover px-6 md:px-10 flex flex-col items-center rounded-[10px] pb-[60px] md:pb-[67px]">
-      <div className="w-[279px] h-[156px] md:w-[573px] md:h-[320px] relative bg-quality-mobile-cover md:bg-quality-tablet-cover bg-cover -translate-y-1/2 rounded-lg"></div>
+    <section className="mx-6 mb:[120px] md:mb-[144px] lg:mb-[168px] md:mx-10 lg:px-20 xl:max-w-[1280px] xl:mx-auto xl:px-0 bg-quality-mobile md:bg-quality-tablet lg:bg-quality-desktop bg-cover px-6 md:px-10 flex flex-col lg:flex-row-reverse lg:items-start lg:gap-[213px] items-center rounded-[10px] pb-[60px] md:pb-[67px] lg:pr-0 lg:pb-0 lg:pl-0">
+      <div className="w-[279px] h-[156px] md:w-[573px] md:h-[320px] lg:w-[445px] lg:h-[474px] relative bg-quality-mobile-cover md:bg-quality-tablet-cover lg:bg-quality-desktop-cover bg-cover -translate-y-1/2 lg:translate-y-[-88px] lg:-translate-x-[85px] rounded-lg lg:flex-shrink-0"></div>
 
-      <div className="flex flex-col items-center gap-6 text-center -translate-y-[156px] mt-[142px] -mb-[156px] md:-mb-[320px] md:-translate-y-[320px] md:mt-[224px] text-surface">
-        <h3 className="text-[28px] leading-[28px] font-fraunces font-black">
+      <div className="flex flex-col items-center gap-6 lg:gap-8 text-center -translate-y-[156px] mt-[142px] -mb-[156px] md:-mb-[320px] md:-translate-y-[320px] md:mt-[224px] lg:-mb-[0px] lg:-translate-y-[0px]   text-surface lg:max-w-[540px] lg:items-start lg:text-left lg:ml-[85px] lg:mt-[88px]">
+        <h3 className="text-[28px] leading-[28px] md:text-[32px] md:leading-[48px] lg:text-[40px] lg:leading-[48px] font-fraunces font-black">
           Uncompromising quality
         </h3>
-        <p className="opacity-80 text-[15px] leading-[25px] max-w-[279px] md:max-w-[540px]">
+        <p className="opacity-80 text-[15px] leading-[25px] lg:text-[16px] lg:leading-[26px] max-w-[279px] md:max-w-[540px]">
           Although we work with growers who pay close attention to all stages of
           harvest and processing, we employ, on our end, a rigorous quality
           control program to avoid over-roasting or baking the coffee dry. Every

@@ -50,6 +50,8 @@ export default {
       "quality-tablet": 'url("./assets/about/tablet/bg-quality.png")',
       "quality-tablet-cover": 'url("./assets/about/tablet/image-quality.jpg")',
       "quality-desktop": 'url("./assets/about/desktop/bg-quality.png")',
+      "quality-desktop-cover":
+        'url("./assets/about/desktop/image-quality.jpg")',
     },
   },
   plugins: [],
