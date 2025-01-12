@@ -12,32 +12,28 @@ export const Footer = () => {
           <img src={logo} alt="Coffee Roasters Logo" />
         </Link>
 
-        <ul className="flex flex-col items-center gap-6 md:flex-row md:gap-[33px] lg:text-center xl:mr-auto xl:text-left">
-          <li>
-            <Link
-              to="/"
-              className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/create-your-plan"
-              className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
-            >
-              Create Your Plan
-            </Link>
-          </li>
-        </ul>
+        <div className="flex flex-col items-center gap-6 md:flex-row md:gap-[33px] lg:text-center xl:mr-auto xl:text-left">
+          <Link
+            to="/"
+            className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/about"
+            className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
+          >
+            About Us
+          </Link>
+
+          <Link
+            to="/create-your-plan"
+            className="text-navigation-menu leading-[0.923px] text-grey uppercase font-bold hover:text-surface transition-all"
+          >
+            Create Your Plan
+          </Link>
+        </div>
 
         <div className="flex items-center w-[120px] justify-between text-surface md:mt-[33px] lg:mt-0">
           <div className="hover:text-pale-orange transition-all cursor-pointer">

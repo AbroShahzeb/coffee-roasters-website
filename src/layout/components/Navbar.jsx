@@ -9,11 +9,34 @@ export const Navbar = () => {
         <img src={logo} alt="Coffee Roasters Logo" />
       </Link>
 
-      <ul className="text-navigation-menu uppercase font-bold text-grey items-center gap-8 hidden md:flex">
-        <NavLink>Home</NavLink>
-        <NavLink>About Us</NavLink>
-        <NavLink>Create your plan</NavLink>
-      </ul>
+      <div className="text-navigation-menu uppercase font-bold text-grey items-center gap-8 hidden md:flex">
+        <NavLink
+          to="/home"
+          className={({ isActive }) =>
+            isActive && "underline text-dark-cyan underline-offset-4"
+          }
+        >
+          Home
+        </NavLink>
+
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive && "underline text-dark-cyan underline-offset-4"
+          }
+        >
+          About Us
+        </NavLink>
+
+        <NavLink
+          to="/create-your-plan"
+          className={({ isActive }) =>
+            isActive && "underline text-dark-cyan underline-offset-4"
+          }
+        >
+          Create your plan
+        </NavLink>
+      </div>
 
       <button className="md:hidden">
         <img src={iconHamburger} alt="Hamburger Icon" />
