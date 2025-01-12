@@ -32,7 +32,7 @@ export const WhyUsSection = () => {
       <div className="bg-[#2C343E] md:bg-bg-steps px-6 pt-16 pb-[64px] md:px-[74px] md:pt-[56px] md:pb-[70px]  rounded-t-[10px] lg:pt-[100px] lg:pb-[86px]">
         <div className="flex flex-col items-center text-center gap-6 lg:gap-8 text-surface md:max-w-[495px] lg:max-w-[540px] md:mx-auto">
           <h2 className="text-[28px] leading-[28px] md:text-[32px] md:leading-[48px] lg:text-[40px]  font-fraunces font-black">
-            Why choose Us?
+            Why choose us?
           </h2>
           <p className="text-[15px] leading-[25px] font-normal text-surface/80">
             A large part of our role is choosing which particular coffees will
@@ -44,11 +44,11 @@ export const WhyUsSection = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-0 right-0 h-1/2 w-full rounded-b-[10px] z-10 bg-bg-steps "></div>
+        <div className="absolute top-0 left-0 right-0 h-1/2 xl:h-[calc(50%+36px)] w-full rounded-b-[10px] z-10 bg-bg-steps "></div>
         <div className=" flex flex-col items-center gap-8 relative  z-20 px-6 md:px-0 xl:flex-row xl:px-[85px] xl:gap-[30px] xl:items-stretch">
           {whyUsCards.map((card) => (
-            <div className="bg-dark-cyan px-3 pb-12 md:py-[41px] md:pr-[48px] md:pl-[70px] flex flex-col md:flex-row items-center  text-surface justify-end md:justify-start rounded-lg h-[382px] md:h-auto w-full max-w-[500px] md:max-w-[573px] gap-[55px] xl:flex-col xl:px-12 xl:gap-[56px] xl:max-w-full xl:pt-[72px]">
-              <div className=" flex-shrink-0">
+            <div className="bg-dark-cyan px-3 pb-12 md:py-[41px] md:pr-[48px] md:pl-[70px] flex flex-col md:flex-row items-center  text-surface justify-end md:justify-start rounded-lg h-[382px] md:h-auto w-full max-w-[500px] md:max-w-[573px] gap-[55px] xl:flex-col xl:px-12 xl:gap-[56px] xl:max-w-full xl:pt-[72px] xl:h-[382px]">
+              <div className=" flex-shrink-0 flex items-center justify-center xl:h-[72px]">
                 <img
                   src={card.icon}
                   alt={`${card.title} Icon`}
