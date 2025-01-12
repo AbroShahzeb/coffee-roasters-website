@@ -1,5 +1,6 @@
 import { CollectionSection } from "./components/CollectionSection";
 import { Hero } from "./components/Hero";
+import { HowItWorksSection } from "./components/HowItWorksSection";
 import { WhyUsSection } from "./components/WhyUsSection";
 
 export const Home = () => {
@@ -8,6 +9,7 @@ export const Home = () => {
       <Hero />
       <CollectionSection />
       <WhyUsSection />
+      <HowItWorksSection />
     </div>
   );
 };

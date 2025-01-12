@@ -39,7 +39,7 @@ export const CollectionSection = () => {
   return (
     <section className="mt-[120px] xl:mt-[202px] px-6 pb-[120px] md:pb-[144px] lg:pb-[200px] md:px-10 lg:px-0">
       <div className="relative xl:max-w-[1110px] xl:mx-auto">
-        <h2 className="text-grey text-[40px] md:text-[96px] lg:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
+        <h2 className="text-grey text-[40px] md:text-[96px] xl:text-title-alternate-big leading-[72px] font-black text-center font-fraunces ">
           our collection
         </h2>
         <div className="absolute inset-0 top-1/2 lg:-translate-y-1/2 z-10 bg-collection-heading-gradient lg:h-[196px] xl:-mt-6"></div>

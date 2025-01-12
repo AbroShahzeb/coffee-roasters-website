@@ -1,6 +1,7 @@
 import iconCoffeeBean from "../../../assets/home/desktop/icon-coffee-bean.svg";
 import iconGift from "../../../assets/home/desktop/icon-gift.svg";
 import iconTruck from "../../../assets/home/desktop/icon-truck.svg";
+import { WhyUsCard } from "./WhyUsCard";
 
 const whyUsCards = [
   {
@@ -47,24 +48,7 @@ export const WhyUsSection = () => {
         <div className="absolute top-0 left-0 right-0 h-1/2 xl:h-[calc(50%+36px)] w-full rounded-b-[10px] z-10 bg-bg-steps "></div>
         <div className=" flex flex-col items-center gap-8 relative  z-20 px-6 md:px-0 xl:flex-row xl:px-[85px] xl:gap-[30px] xl:items-stretch">
           {whyUsCards.map((card) => (
-            <div className="bg-dark-cyan px-3 pb-12 md:py-[41px] md:pr-[48px] md:pl-[70px] flex flex-col md:flex-row items-center  text-surface justify-end md:justify-start rounded-lg h-[382px] md:h-auto w-full max-w-[500px] md:max-w-[573px] gap-[55px] xl:flex-col xl:px-12 xl:gap-[56px] xl:max-w-full xl:pt-[72px] xl:h-[382px]">
-              <div className=" flex-shrink-0 flex items-center justify-center xl:h-[72px]">
-                <img
-                  src={card.icon}
-                  alt={`${card.title} Icon`}
-                  className="w-[72px] md:w-[56px] xl:w-[72px]"
-                />
-              </div>
-
-              <div className="flex flex-col gap-6 md:gap-4 xl:gap-6 items-center text-center md:text-left md:items-start xl:items-center xl:text-center">
-                <h3 className="text-[24px] leading-[32px] font-fraunces font-black">
-                  {card.title}
-                </h3>
-                <p className="max-w-[212px] text-body md:text-[15px] md:leading-[25px] md:max-w-full">
-                  {card.description}
-                </p>
-              </div>
-            </div>
+            <WhyUsCard card={card} />
           ))}
         </div>
       </div>
