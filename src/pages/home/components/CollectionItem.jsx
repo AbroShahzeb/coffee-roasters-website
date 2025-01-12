@@ -29,7 +29,7 @@ export const CollectionItem = ({ item }) => {
       <motion.div
         className="flex items-center justify-center relative z-50"
         ref={ref} // Attach observer to track visibility
-        initial="hidden" // Starting animation state
+        initial="shown" // Starting animation state
         animate={inView ? "shown" : "hidden"} // Trigger animation based on visibility
         variants={imageVariants} // Define animation keyframes
         transition={{
@@ -47,7 +47,7 @@ export const CollectionItem = ({ item }) => {
       <motion.div
         ref={ref}
         variants={contentVariants}
-        initial="hidden" // Starting animation state
+        initial="shown" // Starting animation state
         animate={inView ? "shown" : "hidden"} // Trigger animation based on visibility
         transition={{
           duration: 1.2, // Total animation time
