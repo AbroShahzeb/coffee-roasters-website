@@ -30,8 +30,8 @@ export const WhyUsSection = () => {
   return (
     <section className="px-6 pb-[120px] md:pb-[144px] lg:pb-[200px] md:px-10 lg:px-20 ">
       <div className="bg-[#2C343E] md:bg-bg-steps px-6 pt-16 pb-[64px] md:px-[74px] md:pt-[56px] md:pb-[70px]  rounded-t-[10px] lg:pt-[100px] lg:pb-[86px]">
-        <div className="flex flex-col items-center text-center gap-6 text-surface md:max-w-[495px] lg:max-w-[540px] md:mx-auto">
-          <h2 className="text-[28px] leading-[28px]  font-fraunces font-black">
+        <div className="flex flex-col items-center text-center gap-6 lg:gap-8 text-surface md:max-w-[495px] lg:max-w-[540px] md:mx-auto">
+          <h2 className="text-[28px] leading-[28px] md:text-[32px] md:leading-[48px] lg:text-[40px]  font-fraunces font-black">
             Why choose Us?
           </h2>
           <p className="text-[15px] leading-[25px] font-normal text-surface/80">
