@@ -33,7 +33,7 @@ export const CollectionItem = ({ item }) => {
         animate={inView ? "shown" : "hidden"} // Trigger animation based on visibility
         variants={imageVariants} // Define animation keyframes
         transition={{
-          duration: 1.2, // Total animation time
+          duration: 0.1, // Total animation time
           ease: "easeInOut", // Smooth transitions
           times: [0, 0.3, 1],
         }}
@@ -50,7 +50,7 @@ export const CollectionItem = ({ item }) => {
         initial="shown" // Starting animation state
         animate={inView ? "shown" : "hidden"} // Trigger animation based on visibility
         transition={{
-          duration: 1.2, // Total animation time
+          duration: 0.1, // Total animation time
           ease: "easeInOut", // Smooth transitions
           times: [0, 0.3, 1],
           delay: 0.5,
