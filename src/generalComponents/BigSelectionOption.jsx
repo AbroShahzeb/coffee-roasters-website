@@ -2,19 +2,23 @@ export const BigSelectionOption = ({
   isSelected = false,
   title = "Option",
   description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  onClick,
 }) => {
   return (
-    <div
-      className={`px-7 py-8 min-h-[250px] rounded-lg ${
-        isSelected ? "bg-dark-cyan" : "bg-[#F4F1EB]"
-      } hover:bg-pale-orange transition-all flex flex-col items-start gap-6 cursor-pointer`}
+    <button
+      className={`px-7 py-8 min-h-[140px] md:min-h-[250px] rounded-lg ${
+        isSelected
+          ? "bg-dark-cyan text-surface"
+          : "bg-[#F4F1EB] text-dark-grey-blue"
+      } hover:bg-pale-orange transition-all flex flex-col items-start gap-6 cursor-pointer text-left`}
+      onClick={() => onClick && onClick(title)}
     >
-      <h3 className="text-[24px] leading-[32px] font-fraunces text-dark-grey-blue font-black">
+      <h3 className="text-[24px] leading-[32px] font-fraunces  font-black">
         {title}
       </h3>
-      <p className="text-body text-dark-grey-blue font-normal font-barlow">
+      <p className="text-body  font-normal font-barlow text-left">
         {description}
       </p>
-    </div>
+    </button>
   );
 };

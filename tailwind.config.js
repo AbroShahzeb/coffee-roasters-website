@@ -54,6 +54,16 @@ export default {
       "quality-desktop": 'url("./assets/about/desktop/bg-quality.png")',
       "quality-desktop-cover":
         'url("./assets/about/desktop/image-quality.jpg")',
+      "plan-hero-mobile": 'url("./assets/plan/mobile/image-hero-blackcup.jpg")',
+      "plan-hero-tablet": 'url("./assets/plan/tablet/image-hero-blackcup.jpg")',
+      "plan-hero-desktop":
+        'url("./assets/plan/desktop/image-hero-blackcup.jpg")',
+      "order-summary-mobile":
+        'url("./assets/plan/mobile/bg-order-summary.png")',
+      "order-summary-tablet":
+        'url("./assets/plan/tablet/bg-order-summary.png")',
+      "order-summary-desktop":
+        'url("./assets/plan/desktop/bg-order-summary.png")',
     },
   },
   plugins: [],

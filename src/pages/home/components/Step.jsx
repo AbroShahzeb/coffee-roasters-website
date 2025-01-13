@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export const Step = ({ step, index }) => {
+export const Step = ({ step, index, textColor = "text-dark-grey-blue" }) => {
   const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
 
   const variants = {
@@ -29,13 +29,11 @@ export const Step = ({ step, index }) => {
         {"0"}
         {step.id + 1}
       </div>
-      <div className="flex flex-col gap-6 md:gap-[38px]">
-        <h2 className="text-dark-grey-blue text-[28px] leading-[32px] xl:text-[32px] xl:leading-[36px] font-fraunces font-black md:max-w-[225px]">
+      <div className={`flex flex-col gap-6 md:gap-[38px] ${textColor}`}>
+        <h2 className=" text-[28px] leading-[32px] xl:text-[32px] xl:leading-[36px] font-fraunces font-black md:max-w-[225px]">
           {step.title}
         </h2>
-        <p className="text-body text-dark-grey-blue xl:max-w-[285px]">
-          {step.description}
-        </p>
+        <p className="text-body  xl:max-w-[285px]">{step.description}</p>
       </div>
     </motion.div>
   );
