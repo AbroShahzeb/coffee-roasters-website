@@ -26,7 +26,7 @@ export const CollectionItem = ({ item }) => {
       key={item.id}
       className="flex flex-col items-center text-center text-dark-grey-blue md:flex-row md:justify-center md:gap-[36px] xl:gap-0  md:text-left xl:flex-col lg:text-center w-full"
     >
-      <div
+      <motion.div
         className="flex items-center justify-center relative z-50"
         ref={ref} // Attach observer to track visibility
         initial="hidden" // Starting animation state
@@ -43,8 +43,8 @@ export const CollectionItem = ({ item }) => {
           className="w-[200px] h-[151px] md:w-[255px] md:h-[193px] xl:h-[183px] xl:w-auto xl:ml-2"
           alt={item.title}
         />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         ref={ref}
         variants={contentVariants}
         initial="hidden" // Starting animation state
@@ -63,7 +63,7 @@ export const CollectionItem = ({ item }) => {
         <p className="mt-4 md:mt-6 text-body max-w-[282px]">
           {item.description}
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

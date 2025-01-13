@@ -15,7 +15,7 @@ export const Step = ({ step, index, textColor = "text-dark-grey-blue" }) => {
     },
   };
   return (
-    <div
+    <motion.div
       variants={variants}
       initial="hidden"
       animate={inView ? "shown" : "hidden"}
@@ -35,6 +35,6 @@ export const Step = ({ step, index, textColor = "text-dark-grey-blue" }) => {
         </h2>
         <p className="text-body  xl:max-w-[285px]">{step.description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };

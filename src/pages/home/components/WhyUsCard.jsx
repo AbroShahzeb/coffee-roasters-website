@@ -15,7 +15,7 @@ export const WhyUsCard = ({ card }) => {
     },
   };
   return (
-    <div
+    <motion.div
       initial="hidden"
       variants={variants}
       ref={ref}
@@ -39,6 +39,6 @@ export const WhyUsCard = ({ card }) => {
           {card.description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
