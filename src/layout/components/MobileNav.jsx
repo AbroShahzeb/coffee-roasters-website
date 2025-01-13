@@ -34,7 +34,7 @@ export const MobileNav = ({ isOpen = true, setIsOpen }) => {
           variants={variants}
           className="fixed inset-0 w-full z-[500] overflow-hidden"
         >
-          <div className="bg-white flex h-[90px] items-center justify-between px-6">
+          <div className="bg-surface flex h-[90px] items-center justify-between px-6">
             <div>
               <img
                 src={logo}
