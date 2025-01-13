@@ -14,6 +14,7 @@ export const PlanForm = ({
   setSelectedGrindOption,
   selectedDelivery,
   setSelectedDelivery,
+  setIsCheckoutModalOpen,
 }) => {
   const [preferenceOpen, setPreferenceOpen] = useState(true);
   const [beanTypeOpen, setBeanTypeOpen] = useState(false);
@@ -36,6 +37,7 @@ export const PlanForm = ({
         setPreferenceOpen((prev) => !prev);
       },
       isLast: false,
+      isSelected: selectedPreference,
     },
     {
       id: 1,
@@ -45,6 +47,7 @@ export const PlanForm = ({
         setBeanTypeOpen((prev) => !prev);
       },
       isLast: false,
+      isSelected: selectedBeanType,
     },
     {
       id: 2,
@@ -54,6 +57,7 @@ export const PlanForm = ({
         setQuantityOpen((prev) => !prev);
       },
       isLast: false,
+      isSelected: selectedQuantity,
     },
     {
       id: 3,
@@ -63,6 +67,7 @@ export const PlanForm = ({
         setGrindOptionsOpen((prev) => !prev);
       },
       isLast: false,
+      isSelected: selectedQuantity,
     },
     {
       id: 4,
@@ -72,6 +77,7 @@ export const PlanForm = ({
         setDeliveriesOpen((prev) => !prev);
       },
       isLast: true,
+      isSelected: selectedDelivery,
     },
   ];
 
@@ -180,6 +186,7 @@ export const PlanForm = ({
       isOpen: grindOptionsOpen,
       setIsOpen: setGrindOptionsOpen,
       ref: grindOptionsRef,
+      disabled: selectedPreference === "Capsule",
       options: [
         {
           id: 0,
@@ -216,22 +223,45 @@ export const PlanForm = ({
         {
           id: 0,
           title: "Every week",
-          description:
-            "$7.20 per shipment. Includes free first-class shipping.",
+          description: `${
+            selectedQuantity === "1000g"
+              ? "$22.00"
+              : selectedQuantity === "500g"
+              ? "$13.00"
+              : selectedQuantity === "250g"
+              ? "$7.20"
+              : "$7.20"
+          } per shipment. Includes free first-class shipping.`,
           onClick: (title) => setSelectedDelivery(title),
           isSelected: selectedDelivery === "Every week",
         },
         {
           id: 1,
           title: "Every 2 weeks",
-          description: "$9.60 per shipment. Includes free priority shipping.",
+          description: `${
+            selectedQuantity === "1000g"
+              ? "$32.00"
+              : selectedQuantity === "500g"
+              ? "$17.50"
+              : selectedQuantity === "250g"
+              ? "$9.60"
+              : "$9.60"
+          } per shipment. Includes free priority shipping.`,
           onClick: (title) => setSelectedDelivery(title),
           isSelected: selectedDelivery === "Every 2 weeks",
         },
         {
           id: 2,
           title: "Every month",
-          description: "$12.00 per shipment. Includes free priority shipping.",
+          description: `${
+            selectedQuantity === "1000g"
+              ? "$42.00"
+              : selectedQuantity === "500g"
+              ? "$22.50"
+              : selectedQuantity === "250g"
+              ? "$12.00"
+              : "$12.00"
+          } per shipment. Includes free priority shipping.`,
           onClick: (title) => setSelectedDelivery(title),
           isSelected: selectedDelivery === "Every month",
         },
@@ -247,10 +277,18 @@ export const PlanForm = ({
           {formSteps.map((step) => (
             <>
               <button
-                className={`text-[24px] leading-[32px] font-fraunces font-black text-dark-grey-blue opacity-40 text-left whitespace-nowrap`}
+                className={`text-[24px] leading-[32px] font-fraunces font-black text-dark-grey-blue ${
+                  !step.isSelected && "opacity-40"
+                } text-left whitespace-nowrap`}
                 onClick={step.onClick}
               >
-                <span className={`text-grey mr-6`}>0{step.id + 1}</span>
+                <span
+                  className={`${
+                    step.isSelected ? "text-dark-cyan" : "text-grey"
+                  } mr-6`}
+                >
+                  0{step.id + 1}
+                </span>
                 <span>{step.title}</span>
               </button>
               {!step.isLast && (
@@ -268,6 +306,7 @@ export const PlanForm = ({
               isOpen={accordianData.isOpen}
               setIsOpen={accordianData.setIsOpen}
               ref={accordianData.ref}
+              disabled={accordianData.disabled && accordianData.disabled}
             >
               <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-8 md:mt-[40px] lg:mt-[56px]">
                 {accordianData.options.map((option) => (
@@ -290,7 +329,8 @@ export const PlanForm = ({
               Order summary
             </p>
             <h2 className="text-[24px] leading-[40px] font-fraunces font-black text-white">
-              “I drink my coffee as{" "}
+              “I drink my coffee{" "}
+              {selectedPreference === "Capsule" ? "using" : "as"}{" "}
               <span className="text-dark-cyan">
                 {selectedPreference || "_____"}{" "}
               </span>
@@ -302,10 +342,14 @@ export const PlanForm = ({
               <span className="text-dark-cyan">
                 {selectedQuantity || "_____"}{" "}
               </span>{" "}
-              ground ala{" "}
-              <span className="text-dark-cyan">
-                {selectedGrindOption || "_____"}{" "}
-              </span>
+              {selectedPreference !== "Capsule" && (
+                <>
+                  ground ala{" "}
+                  <span className="text-dark-cyan">
+                    {selectedGrindOption || "_____"}{" "}
+                  </span>
+                </>
+              )}
               , sent to me{" "}
               <span className="text-dark-cyan">
                 {selectedDelivery || "_____"}
@@ -315,7 +359,17 @@ export const PlanForm = ({
           </div>
 
           <div>
-            <Button label="Create my plan" />
+            <Button
+              label="Create my plan"
+              disabled={
+                !selectedBeanType ||
+                !selectedPreference ||
+                (selectedPreference !== "Capsule" && !selectedGrindOption) ||
+                !selectedQuantity ||
+                !selectedDelivery
+              }
+              onClick={() => setIsCheckoutModalOpen(true)}
+            />
           </div>
         </div>
       </div>

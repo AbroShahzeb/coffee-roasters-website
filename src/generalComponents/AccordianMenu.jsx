@@ -4,11 +4,11 @@ import React from "react";
 
 export const AccordianMenu = React.forwardRef(
   (
-    { isOpen, setIsOpen, title = "Sample Menu", children, disabled = true },
+    { isOpen, setIsOpen, title = "Sample Menu", children, disabled = false },
     ref
   ) => {
     return (
-      <button ref={ref}>
+      <button ref={ref} disabled={disabled}>
         <div
           className="flex items-center text-left gap-[45.59px] justify-between w-full group cursor-pointer"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -29,17 +29,19 @@ export const AccordianMenu = React.forwardRef(
           </div>
         </div>
 
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: isOpen ? "auto" : 0 }}
-          exit={{ height: 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="overflow-hidden"
-          style={{ overflowX: "hidden" }} // Fix horizontal scrollbar
-        >
-          {/* Wrapper for padding and content */}
-          <div>{children}</div>
-        </motion.div>
+        {!disabled && (
+          <motion.div
+            initial={{ height: 0 }}
+            animate={{ height: isOpen ? "auto" : 0 }}
+            exit={{ height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+            style={{ overflowX: "hidden" }} // Fix horizontal scrollbar
+          >
+            {/* Wrapper for padding and content */}
+            <div>{children}</div>
+          </motion.div>
+        )}
       </button>
     );
   }

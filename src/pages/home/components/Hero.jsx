@@ -15,7 +15,7 @@ export const Hero = () => {
     <div className="px-6  md:px-10 lg:px-20 h-[500px] lg:h-[600px] w-full">
       <header className="bg-hero-mobile md:bg-hero-tablet lg:bg-hero-desktop h-[500px] lg:h-[600px] w-full bg-left-bottom bg-no-repeat bg-cover rounded-[10px] flex items-center">
         <div className="px-6 text-center flex flex-col items-center md:text-left md:items-start md:max-w-[398px] lg:max-w-[520px] md:ml-[58px] lg:ml-[86px] md:px-0">
-          <motion.h1
+          <h1
             ref={ref}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -24,8 +24,8 @@ export const Hero = () => {
             className="text-[40px] leading-[40px] md:text-[48px] md:leading-[48px] lg:text-[72px] lg:leading-[72px] text-surface font-fraunces font-black lg:tracking-[1px] "
           >
             Great coffee made simple.
-          </motion.h1>
-          <motion.p
+          </h1>
+          <p
             ref={ref}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -36,7 +36,7 @@ export const Hero = () => {
             Start your mornings with the world’s best coffees. Try our expertly
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
-          </motion.p>
+          </p>
           <div
             ref={ref}
             initial="hidden"

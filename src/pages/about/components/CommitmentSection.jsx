@@ -2,10 +2,43 @@ import imageCommitmentMobile from "../../../assets/about/mobile/image-commitment
 import imageCommitmentTablet from "../../../assets/about/tablet/image-commitment.jpg";
 import imageCommitmentDesktop from "../../../assets/about/desktop/image-commitment.jpg";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export const CommitmentSection = () => {
+  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
+
+  const imageVariants = {
+    hidden: {
+      x: -30,
+      opacity: 0,
+    },
+    shown: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
+  const contentVariants = {
+    hidden: {
+      x: 30,
+      opacity: 0,
+    },
+    shown: {
+      x: 0,
+      opacity: 1,
+    },
+  };
   return (
     <section className="px-6 md:px-10 lg:px-20 mt-[120px] mb-[200px] md:mt-[152px] md:mb-[313px] lg:mt-[168px] lg:mb-[256px] flex flex-col gap-12 md:flex-row md:items-center md:gap-[69px] xl:gap-[125px] md:justify-between xl:max-w-[1110px] xl:mx-auto xl:px-0">
-      <div className="w-full h-[400px] md:h-[470px] md:w-[281px] lg:w-[445px] lg:h-[520px] rounded-lg  relative overflow-hidden flex-shrink-0 ">
+      <motion.div
+        initial="hidden"
+        animate={inView ? "shown" : "hidden"}
+        variants={imageVariants}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        ref={ref}
+        className="w-full h-[400px] md:h-[470px] md:w-[281px] lg:w-[445px] lg:h-[520px] rounded-lg  relative overflow-hidden flex-shrink-0 "
+      >
         {/* Image for Mobile Screens */}
         <img
           src={imageCommitmentMobile}
@@ -26,9 +59,16 @@ export const CommitmentSection = () => {
           alt="Guy making Coffee"
           className="absolute top-0  left-0 rounded-lg hidden  lg:block"
         />
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col items-center text-center gap-[30px] md:items-start md:text-left">
+      <motion.div
+        initial="hidden"
+        animate={inView ? "shown" : "hidden"}
+        variants={contentVariants}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        ref={ref}
+        className="flex flex-col items-center text-center gap-[30px] md:items-start md:text-left"
+      >
         <h2 className="text-[32px] leading-[48px] font-fraunces font-black text-dark-grey-blue">
           Our commitment
         </h2>
@@ -45,7 +85,7 @@ export const CommitmentSection = () => {
           finest blends, we roast each lot to highlight tasting profiles
           distinctive to their native growing region.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

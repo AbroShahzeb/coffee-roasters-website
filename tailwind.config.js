@@ -64,6 +64,8 @@ export default {
         'url("./assets/plan/tablet/bg-order-summary.png")',
       "order-summary-desktop":
         'url("./assets/plan/desktop/bg-order-summary.png")',
+      "mobile-nav-gradient":
+        "linear-gradient(to top, rgba(254, 252, 247, 0.50)  0%, #FEFCF7 55.94%)",
     },
   },
   plugins: [],
