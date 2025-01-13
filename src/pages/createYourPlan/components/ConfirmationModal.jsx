@@ -1,8 +1,9 @@
 import { Button } from "../../../generalComponents/Button";
 import { motion, AnimatePresence } from "framer-motion";
-import { FormattedNumber } from "react-intl";
+import { FormattedNumber, useIntl } from "react-intl";
 
 export const ConfirmationModal = ({ data, isOpen, setIsOpen }) => {
+  const { formatNumber } = useIntl();
   const {
     selectedPreference,
     selectedBeanType,
@@ -98,7 +99,15 @@ export const ConfirmationModal = ({ data, isOpen, setIsOpen }) => {
               </p>
               <div className="mt-6 md:mt-12 md:flex md:items-center md:gap-3">
                 <Button
-                  label={`Checkout - $14.00/mo`}
+                  label={`Checkout - ${formatNumber(
+                    calculateMonthlyPrice(selectedDelivery, selectedQuantity),
+                    {
+                      style: "currency",
+                      currency: "USD",
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    }
+                  )}/mo`}
                   className="md:hidden"
                   onClick={() => setIsOpen(false)}
                 />
