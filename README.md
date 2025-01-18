@@ -1,6 +1,6 @@
 # Coffee Roasters
 
-![](/screenshot.jpg)
+![](./assets/screenshot.jpg)
 
 Coffee Roasters is a customizable subscription website where users can personalize their coffee preferences. The website allows customers to select their desired coffee type, grind, and delivery frequency, making it easy to enjoy the perfect cup of coffee at home.
 
